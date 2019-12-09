@@ -1,0 +1,461 @@
+# XBMC Media Center language file
+# Addon Name: Kalendar glotz.info
+# Addon id: service.calendar.glotz-info
+# Addon version: 0.0.1
+# Addon Provider: Maven
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2017-06-18 15:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+
+msgctxt "#30010"
+msgid "KN Calendar Reminder"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Mail"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Google Calendar API"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Reminder Notifications"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Show Reminders on Start"
+msgstr ""
+
+msgctxt "#30016"
+msgid "max Count of Reminders"
+msgstr ""
+
+msgctxt "#30017"
+msgid "Repeat after"
+msgstr ""
+
+msgctxt "#30018"
+msgid "Abort Notification of Reminders now"
+msgstr ""
+
+msgctxt "#30019"
+msgid "Press Info Key"
+msgstr ""
+
+msgctxt "#30020"
+msgid "additional Time Remarks"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Duration of notification for abort message"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Calendar Sheet"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Load Preview for max"
+msgstr ""
+
+msgctxt "#30024"
+msgid "2 months"
+msgstr ""
+
+msgctxt "#30025"
+msgid "3 months"
+msgstr ""
+
+msgctxt "#30026"
+msgid "4 months"
+msgstr ""
+
+msgctxt "#30027"
+msgid "5 months"
+msgstr ""
+
+msgctxt "#30028"
+msgid "6 months"
+msgstr ""
+
+msgctxt "#30029"
+msgid "Calendar"
+msgstr ""
+
+msgctxt "#30030"
+msgid "1 min"
+msgstr ""
+
+msgctxt "#30031"
+msgid "2 min"
+msgstr ""
+
+msgctxt "#30032"
+msgid "5 min"
+msgstr ""
+
+msgctxt "#30033"
+msgid "10 min"
+msgstr ""
+
+msgctxt "#30034"
+msgid "15 min"
+msgstr ""
+
+msgctxt "#30035"
+msgid "30 min"
+msgstr ""
+
+msgctxt "#30036"
+msgid "5 sec"
+msgstr ""
+
+msgctxt "#30037"
+msgid "7 sec"
+msgstr ""
+
+msgctxt "#30038"
+msgid "10 sec"
+msgstr ""
+
+msgctxt "#30039"
+msgid "20 sec"
+msgstr ""
+
+#empty string with id 30040
+
+msgctxt "#30041"
+msgid "SMTP-Mailserver (Outbox)"
+msgstr ""
+
+msgctxt "#30042"
+msgid "Username"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Email of Sender"
+msgstr ""
+
+msgctxt "#30045"
+msgid "Email of Recipient"
+msgstr ""
+
+#empty strings from id 30046 to 30047
+
+msgctxt "#30048"
+msgid "Charset"
+msgstr ""
+
+msgctxt "#30049"
+msgid "Encryption"
+msgstr ""
+
+msgctxt "#30050"
+msgid "glotz.info"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Show in Calendar"
+msgstr ""
+
+msgctxt "#30052"
+msgid "API Key"
+msgstr ""
+
+msgctxt "#30053"
+msgid "Calendar Marker Color"
+msgstr ""
+
+msgctxt "#30054"
+msgid "Show Events in Notifications"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Check Email Settings"
+msgstr ""
+
+#empty strings from id 30056 to 30069
+
+msgctxt "#30070"
+msgid "Keyfile missing, Reinstallation required"
+msgstr ""
+
+msgctxt "#30071"
+msgid "Authentication process incomplete"
+msgstr ""
+
+msgctxt "#30072"
+msgid "Keyfile invalid, require new one in addon settings"
+msgstr ""
+
+msgctxt "#30073"
+msgid "Keyfile succesfully installed"
+msgstr ""
+
+msgctxt "#30074"
+msgid "%s: Message from %s"
+msgstr ""
+
+msgctxt "#30075"
+msgid "This mail indicates that you have created your setup for delivering mails successfully. KN Calendar Reminder will use these settings for future notifications.\n\nDo not answer to this mail, as this is generated automatically.\n"
+msgstr ""
+
+msgctxt "#30076"
+msgid "Mail was successfully delivered to %s. Your setup seems to be ok for further notifications."
+msgstr ""
+
+msgctxt "#30077"
+msgid "An error occured while delivering mail to %s. Check your settings and your logfile for errors and try again."
+msgstr ""
+
+msgctxt "#30078"
+msgid "You mail settings are invalid or incomplete"
+msgstr ""
+
+msgctxt "#30079"
+msgid "GUI file of calendar not found"
+msgstr ""
+
+msgctxt "#30080"
+msgid "Require Authentication Key"
+msgstr ""
+
+msgctxt "#30081"
+msgid "An authentication key is missing, incomplete or invalid."
+msgstr ""
+
+msgctxt "#30082"
+msgid "Do You want to request a new key by email now?"
+msgstr ""
+
+msgctxt "#30083"
+msgid "Check your email account, follow the instructions within the received email and put in the generated authentication key here. Alternatively, you can save the code to a file and load it from the setup."
+msgstr ""
+
+msgctxt "#30084"
+msgid "Enter authentication code"
+msgstr ""
+
+msgctxt "#30085"
+msgid "Load authentication code from file"
+msgstr ""
+
+msgctxt "#30086"
+msgid "File with authentication code"
+msgstr ""
+
+msgctxt "#30087"
+msgid "Would You enter the authentification code now?"
+msgstr ""
+
+msgctxt "#30088"
+msgid "Load API key from file"
+msgstr ""
+
+msgctxt "#30089"
+msgid "File with API key"
+msgstr ""
+
+msgctxt "#30090"
+msgid "My calendars"
+msgstr ""
+
+msgctxt "#30091"
+msgid "Choose calendars from list"
+msgstr ""
+
+msgctxt "#30092"
+msgid "My Notifications"
+msgstr ""
+
+msgctxt "#30093"
+msgid "No further information available"
+msgstr ""
+
+#empty strings from id 30094 to 30099
+
+msgctxt "#30100"
+msgid "%s: Request for authentication"
+msgstr ""
+
+msgctxt "#30101"
+msgid "An application requests for an authentication code. Please visit the link below, confirm the request on that page and type in the received key sequence in your application. Alternatively, you can store the key in a file and load it from the setup of the addon.\n\nThis is the link for confirmation: %s"
+msgstr ""
+
+#empty string with id 30102
+
+msgctxt "#30103"
+msgid "The authentication code is invalid. Please request a new authentication code from the addon's setup or re-enter the authentication code from the setup."
+msgstr ""
+
+#empty strings from id 30104 to 30108
+
+msgctxt "#30109"
+msgid "Events"
+msgstr ""
+
+msgctxt "#30110"
+msgid "next Events"
+msgstr ""
+
+msgctxt "#30111"
+msgid "full time"
+msgstr ""
+
+msgctxt "#30112"
+msgid "%s days"
+msgstr ""
+
+msgctxt "#30113"
+msgid "1 week"
+msgstr ""
+
+msgctxt "#30114"
+msgid "%s weeks"
+msgstr ""
+
+msgctxt "#30115"
+msgid "1 month"
+msgstr ""
+
+msgctxt "#30116"
+msgid "%s months"
+msgstr ""
+
+msgctxt "#30117"
+msgid "in Progress"
+msgstr ""
+
+#empty strings from id 30118 to 30119
+
+msgctxt "#30120"
+msgid "January"
+msgstr ""
+
+msgctxt "#30121"
+msgid "February"
+msgstr ""
+
+msgctxt "#30122"
+msgid "March"
+msgstr ""
+
+msgctxt "#30123"
+msgid "April"
+msgstr ""
+
+msgctxt "#30124"
+msgid "May"
+msgstr ""
+
+msgctxt "#30125"
+msgid "June"
+msgstr ""
+
+msgctxt "#30126"
+msgid "July"
+msgstr ""
+
+msgctxt "#30127"
+msgid "August"
+msgstr ""
+
+msgctxt "#30128"
+msgid "September"
+msgstr ""
+
+msgctxt "#30129"
+msgid "October"
+msgstr ""
+
+msgctxt "#30130"
+msgid "November"
+msgstr ""
+
+msgctxt "#30131"
+msgid "December"
+msgstr ""
+
+msgctxt "#30132"
+msgid "Mon"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Tue"
+msgstr ""
+
+msgctxt "#30134"
+msgid "Wed"
+msgstr ""
+
+msgctxt "#30135"
+msgid "Thu"
+msgstr ""
+
+msgctxt "#30136"
+msgid "Fri"
+msgstr ""
+
+msgctxt "#30137"
+msgid "Sat"
+msgstr ""
+
+msgctxt "#30138"
+msgid "Sun"
+msgstr ""
+
+msgctxt "#30139"
+msgid "today"
+msgstr ""
+
+msgctxt "#30140"
+msgid "tomorrow"
+msgstr ""
+
+msgctxt "#30141"
+msgid "day after tomorrow"
+msgstr ""
+
+msgctxt "#30142"
+msgid "in %s days"
+msgstr ""
+
+msgctxt "#30143"
+msgid "next week"
+msgstr ""
+
+msgctxt "#30144"
+msgid "in %s weeks"
+msgstr ""
+
+msgctxt "#30145"
+msgid "at"
+msgstr ""
+
+msgctxt "#30146"
+msgid "in 1 month"
+msgstr ""
+
+msgctxt "#30147"
+msgid "in %s months"
+msgstr ""

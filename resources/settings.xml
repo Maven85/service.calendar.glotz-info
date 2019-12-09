@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+	<category label="30011">
+		<setting type="lsep" label="30014" />
+		<setting id="show_onstart" type="bool" label="30015" default="true" />
+		<setting id="numreminders" type="labelenum" label="30016" values="1|2|3|4|5" enable="eq(-1,true)" default="3" />
+		<setting id="interval" type="labelenum" label="30017" lvalues="30030|30031|30032|30033|30034|30035" enable="eq(-2,true)" />
+		<setting id="lastnoticeduration" type="labelenum" label="30021" lvalues="30036|30037|30038|30039" enable="eq(-3,true)" />
+		<setting type="sep" />
+		<setting id="abort_notification" type="action" label="30018" option="close" action="RunScript(service.calendar.glotz-info,action=abort_reminders)" />
+		<setting type="lsep" label="30022" />
+		<setting id="additional_timestamps" type="bool" label="30020" default="true" />
+		<setting id="timemax" type="labelenum" label="30023" lvalues="30024|30025|30026|30027|30028" default="2" />
+	</category>
+	<category label="30029">
+		<setting type="lsep" label="30050" />
+		<setting id="glotz_apikey" type="text" label="30052" default="" />
+		<setting id="glotz_loadkey" type="action" label="30088" option="close" action="RunScript(service.calendar.glotz-info,action=load_glotz_key)" />
+		<setting id="glotz_notify" type="bool" label="30054" default="true" />
+	</category>
+</settings>
