@@ -55,4 +55,4 @@ while xbmcgui.Window(10000).getProperty('reminders') == '1' and not monitor.abor
     monitor.waitForAbort(t.getAddonSetting('interval', sType=t.NUM, multiplicator=60))
     _cycle += 1
 
-t.writeLog('Notification service finished', xbmc.LOGNOTICE)
+t.writeLog('Notification service finished', xbmc.LOGINFO)

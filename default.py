@@ -74,7 +74,7 @@ def controller(mode=None, handle=None, content=None, eventId=None, actor=None):
             tools.Notify().notify(__LS__(30010), __LS__(30073))
 
     elif mode == 'abort_reminders':
-        tools.writeLog('abort notification service by setup', xbmc.LOGNOTICE)
+        tools.writeLog('abort notification service by setup', xbmc.LOGINFO)
         xbmcgui.Window(10000).setProperty('reminders', '0')
 
     elif mode == 'getcontent':
@@ -132,7 +132,7 @@ if __name__ == '__main__':
             arguments.pop(0)
             arguments[1] = arguments[1][1:]
 
-        tools.writeLog('parameter hash: %s' % (str(arguments[1])), xbmc.LOGNOTICE)
+        tools.writeLog('parameter hash: %s' % (str(arguments[1])), xbmc.LOGINFO)
         params = tools.ParamsToDict(arguments[1])
         action = params.get('action', '')
         content = params.get('content', '')

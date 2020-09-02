@@ -37,7 +37,7 @@ class DialogKaiToast(BaseWindow):
         tools.writeLog('Action received: ID %s' % str(action.getId()))
         if (action == ACTION_NAV_BACK) or (action == ACTION_SELECT) or (action == ACTION_SHOW_INFO):
             xbmcgui.Window(10000).setProperty('reminders', '0')
-            tools.writeLog('Display of notifications aborted by user', level=xbmc.LOGNOTICE)
+            tools.writeLog('Display of notifications aborted by user', level=xbmc.LOGINFO)
             self.close()
 
 
