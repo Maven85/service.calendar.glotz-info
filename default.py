@@ -12,17 +12,18 @@ from resources.lib.googleCalendar import Calendar
 import xbmc
 import xbmcaddon
 import xbmcgui
+import xbmcvfs
 
 __addon__ = xbmcaddon.Addon()
 __path__ = __addon__.getAddonInfo('path')
 __profiles__ = __addon__.getAddonInfo('profile')
 __LS__ = __addon__.getLocalizedString
 
-__xml__ = xbmc.translatePath('special://skin').split(os.sep)[-2] + '.calendar.xml'
+__xml__ = xbmcvfs.translatePath('special://skin').split(os.sep)[-2] + '.calendar.xml'
 
-if not os.path.exists(xbmc.translatePath(__profiles__)): os.makedirs(xbmc.translatePath(__profiles__))
+if not os.path.exists(xbmcvfs.translatePath(__profiles__)): os.makedirs(xbmcvfs.translatePath(__profiles__))
 
-TEMP_STORAGE_EVENTS = os.path.join(xbmc.translatePath(__profiles__), 'events.json')
+TEMP_STORAGE_EVENTS = os.path.join(xbmcvfs.translatePath(__profiles__), 'events.json')
 
 if not (xbmcgui.Window(10000).getProperty('calendar_month') or xbmcgui.Window(10000).getProperty('calendar_year')):
     xbmcgui.Window(10000).setProperty('calendar_month', str(datetime.today().month))

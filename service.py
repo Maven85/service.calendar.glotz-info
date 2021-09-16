@@ -7,6 +7,7 @@ import os
 import xbmc
 import xbmcaddon
 import xbmcgui
+import xbmcvfs
 
 from resources.lib.googleCalendar import Calendar
 import resources.lib.tools as t
@@ -14,12 +15,12 @@ import resources.lib.notification as DKT
 
 __addon__ = xbmcaddon.Addon()
 __path__ = __addon__.getAddonInfo('path')
-__icon__ = os.path.join(xbmc.translatePath(__path__), 'resources', 'skins', 'Default', 'media', 'icon.png')
-__icon2__ = os.path.join(xbmc.translatePath(__path__), 'resources', 'skins', 'Default', 'media', 'icon_alert.png')
+__icon__ = os.path.join(xbmcvfs.translatePath(__path__), 'resources', 'skins', 'Default', 'media', 'icon.png')
+__icon2__ = os.path.join(xbmcvfs.translatePath(__path__), 'resources', 'skins', 'Default', 'media', 'icon_alert.png')
 __profiles__ = __addon__.getAddonInfo('profile')
 __LS__ = __addon__.getLocalizedString
 
-TEMP_STORAGE_NOTIFICATIONS = os.path.join(xbmc.translatePath(__profiles__), 'notifications.json')
+TEMP_STORAGE_NOTIFICATIONS = os.path.join(xbmcvfs.translatePath(__profiles__), 'notifications.json')
 
 if t.getAddonSetting('show_onstart', sType=t.BOOL):
     xbmcgui.Window(10000).setProperty('reminders', '1')

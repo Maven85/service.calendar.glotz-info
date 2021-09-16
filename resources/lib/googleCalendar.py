@@ -15,6 +15,7 @@ import xbmc
 import xbmcaddon
 import xbmcplugin
 import xbmcgui
+import xbmcvfs
 
 try:
     from urllib import request as urllib
@@ -26,7 +27,7 @@ __addonname__ = __addon__.getAddonInfo('id')
 __addonpath__ = __addon__.getAddonInfo('path')
 __profiles__ = __addon__.getAddonInfo('profile')
 __LS__ = __addon__.getLocalizedString
-__symbolpath__ = os.path.join(xbmc.translatePath(__addonpath__), 'resources', 'skins', 'Default', 'media')
+__symbolpath__ = os.path.join(xbmcvfs.translatePath(__addonpath__), 'resources', 'skins', 'Default', 'media')
 
 
 class Calendar(object):
@@ -91,7 +92,7 @@ class Calendar(object):
 
             events.sort(key=operator.itemgetter('timestamp'))
 
-            with open(storage, 'w') as filehandle:  json.dump(events, filehandle)
+            with open(storage, 'w') as filehandle: json.dump(events, filehandle)
         else:
             t.writeLog('getting events from local storage')
             with open(storage, 'r') as filehandle: events = json.load(filehandle)
