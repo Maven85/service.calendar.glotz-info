@@ -374,7 +374,7 @@
                         <top>80</top>
                         <left>5</left>
                         <textcolor>FF999999</textcolor>
-                        <font>font_flag</font>
+                        <font>font20_title</font>
                         <info>ListItem.Property(description)</info>
                     </control>
                 </itemlayout>
@@ -448,7 +448,7 @@
                         <top>80</top>
                         <left>5</left>
                         <textcolor>FF999999</textcolor>
-                        <font>font_flag</font>
+                        <font>font20_title</font>
                         <info>ListItem.Property(description)</info>
                     </control>
                 </focusedlayout>
