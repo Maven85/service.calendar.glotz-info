@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 from __future__ import unicode_literals
-from datetime import datetime
+from datetime import datetime, UTC
 from dateutil import relativedelta
 
 import sys
@@ -63,8 +63,8 @@ def calc_boundaries(direction):
 
 
 def controller(mode=None, handle=None, content=None, eventId=None, actor=None):
-    now = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0).isoformat() + 'Z'
-    timemax = (datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0) +
+    now = datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0).isoformat() + 'Z'
+    timemax = (datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0) +
                relativedelta.relativedelta(months=tools.getAddonSetting('timemax', sType=tools.NUM))).isoformat() + 'Z'
 
     if mode == 'load_glotz_key':
@@ -113,7 +113,7 @@ def controller(mode=None, handle=None, content=None, eventId=None, actor=None):
             Popup.doModal()
             del Popup
         except RuntimeError as e:
-            raise FileNotFoundException('%s: %s' % (e.message, __xml__))
+            raise FileNotFoundException('%s: %s' % (e, __xml__))
     else:
         pass
 
@@ -148,5 +148,5 @@ if __name__ == '__main__':
             controller(mode='gui')
 
     except FileNotFoundException as e:
-        tools.writeLog(e.message, xbmc.LOGERROR)
+        tools.writeLog(e, xbmc.LOGERROR)
         tools.Notify().notify(__LS__(30010), __LS__(30079))
